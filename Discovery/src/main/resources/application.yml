@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 8761
+
+# Exclude client dependency since the server starter includes client dependencies.
+eureka:
+  client:
+    registerWithEureka: false
+    FetchRegistry: false
+  dashboard:
+    path: eureka-ui
